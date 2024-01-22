@@ -28,8 +28,8 @@ public class PM9000 {
         }
 
         // Convert user input into a list, to then convert it to a hashset for use of collections.frequency to check for duplicate entries.
-        List asList = Arrays.asList(hand);
-        Set<String> mySet = new HashSet<String>(asList);
+        List<String> asList = Arrays.asList(hand);
+        Set<String> mySet = new HashSet<>(asList);
 
         for(String s: mySet) {
             if (Collections.frequency(asList,s) > 1) {
@@ -100,8 +100,8 @@ public class PM9000 {
         }
         
         // Convert string array of ranks to a list and then a HashSet to count duplicate ranks using Collections.frequency()
-        List asList = Arrays.asList(handRanks);
-        Set<String> mySet = new HashSet<String>(asList);
+        LList<String> asList = Arrays.asList(handRanks);
+        Set<String> mySet = new HashSet<>(asList);
         int pairCount = 0;
         int trioCount = 0;
 
