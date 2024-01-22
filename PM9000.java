@@ -100,7 +100,7 @@ public class PM9000 {
         }
         
         // Convert string array of ranks to a list and then a HashSet to count duplicate ranks using Collections.frequency()
-        LList<String> asList = Arrays.asList(handRanks);
+        List<String> asList = Arrays.asList(handRanks);
         Set<String> mySet = new HashSet<>(asList);
         int pairCount = 0;
         int trioCount = 0;
